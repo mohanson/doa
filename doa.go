@@ -7,7 +7,7 @@ func Doa(b bool) {
 	}
 }
 
-// Nil lets you test if an error in your code is nil, if not, the program will panick.
+// Nil lets you test if an error in your code is nil, if not, the program will panic.
 func Nil(err error) {
 	if err != nil {
 		panic(err)
@@ -15,7 +15,7 @@ func Nil(err error) {
 }
 
 // Try will give you the embedded value if there is no error returns. If instead error then it will panic.
-func Try(a interface{}, err error) interface{} {
+func Try[T any](a T, err error) T {
 	if err != nil {
 		panic(err)
 	}
