@@ -21,3 +21,8 @@ func Try[T any](a T, err error) T {
 	}
 	return a
 }
+
+// Err just returns error.
+func Err[T any](a T, err error) error {
+	return err
+}
