@@ -1,3 +1,3 @@
-module github.com/godump/doa
+module github.com/mohanson/doa
 
-go 1.18
+go 1.22
